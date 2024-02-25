@@ -4,8 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <h1>This is my Web Page!</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#home" class="navbar-brand">Rodel.Gabriel</a>
+
+            <button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>       
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Home / Header -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-8">
+                    <h1>Hi! I'm <span>Rod</span>.</h1>
+                    <h1><span>Web Developer</span></h1>
+                    <p>
+                        In this landing page, I'll showcase responsive design, and <br>
+                        modern web page UI using CSS, HTML, and Bootstrap.
+                    </p>
+                    <a href="#contact">
+                        <i class="bi bi-facebook" href="#contact"></i>
+                    </a>
+                    <a href="#contact">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/homeimage.png" alt="Home Image" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>   <!-- End of Home / Header -->
+
+    <!-- About -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <img src="images/avatar.png" alt="Avatar" class="img-fluid">
+                </div>
+
+                <div class="col-md-6 padding">
+                    <p class="lead">
+                        I'm a Computer Science graduate and an <br>Indie Web Developer specializing in  front <br>end development using HTML, CSS, and Bootsrap.  
+                    </p>
+                    <h3>HTML</h3>
+                    <div class="progress" role="progressbar">
+                        <div class="progress-bar bg-warning htmlBar">90%</div>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="progress" role="progressbar">
+                        <div class="progress-bar bg-warning cssBar">85%</div>
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <div class="progress" role="progressbar">
+                        <div class="progress-bar bg-warning bootstrapBar">85%</div>
+                    </div>
+                    <h3>Photoshop</h3>
+                    <div class="progress" role="progressbar">
+                        <div class="progress-bar bg-warning photoshopBar">80%</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> <!-- End of About -->
+
+    <!-- Portfolio -->
+
+    <section id="portfolio">
+        <div class="container text-center">
+            <div class="row">
+                <h3>Portfolio</h1>
+                <h1>My Web Application Designs</h2>
+                <div class="col-md-6">
+                    <img src="images/portfolio_webpage1.png" alt="Portfolio Web Page1" class="img-fluid scaleOne">
+                    <p>This is a Professional Landing Page for a mockup company<br> that I developed using HTML, CSS, and Bootstrap.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/portfolio_webpage2.png" alt="Portfolio Web Page2" class="img-fluid scaleTwo">
+                    <p>This is a fully responsive web page with different components highlighting modern UI design. It also has animations and interactive buttons and links.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>   <!-- End of Portfolio -->
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row">
+                <h3>For any inquiries</h1>
+                <h1>Get in touch</h2>
+
+                <div class="col-md-6 contacts">
+                    <div class="d-flex">
+                        <i class="bi bi-facebook"></i>
+                        <a href="">rodelgabriel@facebook.com</a>
+                    </div>
+                    <div class="d-flex text-end">
+                        <i class="bi bi-envelope-fill"></i> 
+                        <a href="">rodelgabriel45@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="images/web_progammer.jpg" alt="Web Programmer Image" class="card-img-top">
+                        <div class="card-body">
+                            <form>
+                                <input type="text" id="fullName" class="form-control" placeholder="Enter Full Name">
+                                <input type="email" id="email" class="form-control" placeholder="Enter Email">
+                                <textarea id="message" rows="3" class="form-control" placeholder="Enter your Message.."></textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
